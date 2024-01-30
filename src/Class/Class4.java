@@ -19,20 +19,22 @@ public class Class4 {
 
         Student[] students= {student1,student2,student3};
 
-        for(int i = 0; i < students.length; i++){
+       /* for(int i = 0; i < students.length; i++){
             System.out.println("이름 :" + students[i].name + " 나이 :"+ students[i].Age + " 성적 :"+ students[i].grade);
         }
 
         //for 문 최적화??
-        //방법 1 : 반복 요소를 변수에 담아 처리하기
-        for(int i = 0; i < students.length; i++){
+        //방법 1 : 반복 요소를 변수에 담아 처리하기*/
+        /*for(int i = 0; i < students.length; i++){
             Student s = students[i];
             System.out.println("이름 :" + s.name + " 나이 :"+ s.Age + " 성적 :"+ s.grade);
         }
         //방법 2 : 향상된 for 문( for each ) 사용하기
        for(Student s : students){
            System.out.println("이름 :" + s.name + " 나이 :"+ s.Age + " 성적 :"+ s.grade);
-       }
+       }*/
+       //단축키 : iter
        //for each 문은 따로 반복 횟수를 명시적으로 주는 것이 불가능하고, 한 단계씩 순차적으로 반복할 때만 사용이 가능하다는 제약이 있다.
+        }
     }
-}
+
