@@ -1,11 +1,6 @@
-package extends1.ex4;
+package extends1.ex3;
 
 public class HydrogenCar extends Car {
-
-    @Override
-    public void move(){
-        System.out.println("차가 빠르게 이동합니다.");
-    }
     public void fillHydrogen(){
         System.out.println("수소를 충전합니다.");
     }

@@ -1,7 +1,2 @@
-package Poly.ex;
-
-public class Parent {
-    public void parentMethod(){
-        System.out.println("Parent.method");
-    }
+package Poly.ex;public class Parent {
 }

@@ -1,6 +1,2 @@
-package Poly.Diamond;
-
-public interface InterfaceA {
-    void methodA();
-    void methodCommon();
+package Poly.Diamond;public interface Interface1 {
 }

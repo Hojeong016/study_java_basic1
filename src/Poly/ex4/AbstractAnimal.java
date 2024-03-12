@@ -1,7 +1,10 @@
-package Poly.ex4;
+package Poly.ex3;
 
 public abstract class AbstractAnimal {
 
     public abstract void sound();
-    public abstract void move();
+
+    public void move(){
+        System.out.println("동물이 움직입니다.");
+    }
 }

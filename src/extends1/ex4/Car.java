@@ -1,8 +1,8 @@
-package extends1.ex4;
+package extends1.ex3;
 
 public class Car {
     public void move(){
-        System.out.println("이동합니다.");
+        System.out.println("차를 움직입니다.");
     }
 
     public void openDoor(){

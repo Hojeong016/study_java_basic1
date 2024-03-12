@@ -1,4 +1,2 @@
-package Pack.b;
-
-public class Data {
+package Pack.b;public class Data {
 }
