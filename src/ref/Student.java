@@ -1,33 +1,57 @@
 package ref;
 
-public class Student {
-    //DTO의 역할을 하는 것일까?
 
-    String name;
-    int Age;
-    int grade;
-}
-
-
-
-    /*  String name;
-    int age;
-    int grade;
-//멤버변수 / 필드 : 클래스에 소속된 멤버 변수
-    // 클래스는 관대상 대문자도 시작한다. 변수는 소문자 .
-    public void information(String name, int age, int grade){
-        System.out.println("이름 :"+ name + " 나이: "+age+" 성적: "+ grade);
-    }
+public class StudentRef {
 
 
     public static void main(String[] args) {
-        class1 student1 = new class1();
-        class1 student2 = new class1();
+        Student student1 = new Student();
+        Information(student1,"호정",15,90);
 
-        student1.information("학생1",15,90);
-        student2.information("학생2",16,80);
+        Student student2 = new Student();
+        Information(student2,"희진",16,80);
+
+
+        StudentInformation(student1);
+        StudentInformation(student2);
     }
-}*/
+    // 학생의 정보를 입력하는 메서드
+    public static void Information(Student student, String name, int Age, int grade){
+        student.name = name;
+        student.Age =Age;
+        student.grade =grade;
+    }
+    //학생의 정보를 출력하는 메서드
+    public static void StudentInformation(Student student) {
+        System.out.println("이름: "+student.name + " 나이:"+student.Age+" 성적:"+student.grade);
+    }
+}
+//처음 작성한 코드(class1)와 두번째로 작성한 코드 중 무엇이 더 상황에 맞고 효율적일까??
+//1, Ref
+/*
+    public static void StudentInformation(Student student){
+        System.out.println("이름: "+student.name + " 나이:"+student.Age+" 성적:"+student.grade);
+    }
+}
+    public static void main(String[] args) {
+        Student student1 = new Student();
+        student1.name="호정";
+        student1.Age=15;
+        student1.grade=45;
+
+        Student student2 = new Student();
+        student2.name="오징어";
+        student2.Age=30;
+        student2.grade=20;
+
+        StudentInformation(student1);
+        StudentInformation(student2);
+    }
 
 
+//학생의 정보를 출력하는 메소드
 
+public static void StudentInformation(Student student){
+    System.out.println("이름: "+student.name + " 나이:"+student.Age+" 성적:"+student.grade);
+}
+} */
