@@ -1,2 +1,14 @@
-package access.b;public class PublicClassOuterMain {
-}
+//package access.b;
+
+//import access.a.DefaultClass1;
+//import access.a.DefaultClass2;
+import access.a.PublicClass;
+
+//public class PublicClassOuterMain {
+   // public static void main(String[] args) {
+      //  PublicClass publicClass = new PublicClass();
+       // DefaultClass1 defaultClass1= new DefaultClass1();
+        //efaultClass2 defaultClass2= new DefaultClass2();
+
+    //access.a.DefaultClass1 is not public in access.a; cannot be accessed from outside package 오류
+

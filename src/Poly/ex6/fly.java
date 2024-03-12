@@ -1,2 +1,5 @@
-package Poly.ex6;public interface fly {
+package Poly.ex6;
+
+public interface fly {
+    void fly();
 }

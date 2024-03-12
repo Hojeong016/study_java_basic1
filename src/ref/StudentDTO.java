@@ -1,11 +1,41 @@
 package ref;
 
-public class Student {
+public class StudentDTO {
     //DTO의 역할을 하는 것일까?
 
     String name;
     int Age;
     int grade;
+
+    public StudentDTO(String name, int age, int grade) {
+        this.name = name;
+        Age = age;
+        this.grade = grade;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return Age;
+    }
+
+    public void setAge(int age) {
+        Age = age;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
 }
 
 

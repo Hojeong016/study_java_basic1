@@ -1,29 +1,30 @@
 package ref;
 
 
-public class StudentRef {
-
+/*public class Student {
+    static StudentDTO student1 = new StudentDTO();
 
     public static void main(String[] args) {
-        Student student1 = new Student();
+
+
         Information(student1,"호정",15,90);
-
-        Student student2 = new Student();
-        Information(student2,"희진",16,80);
+        Information("희진",16,80);
 
 
-        StudentInformation(student1);
-        StudentInformation(student2);
+        PrintStudent(student1);
+        PrintStudent(student2);
     }
     // 학생의 정보를 입력하는 메서드
-    public static void Information(Student student, String name, int Age, int grade){
+    public static StudentDTO Information(StudentDTO student ,String name, int Age, int grade){
+        student = new StudentDTO();
         student.name = name;
         student.Age =Age;
         student.grade =grade;
+        return student;
     }
     //학생의 정보를 출력하는 메서드
-    public static void StudentInformation(Student student) {
-        System.out.println("이름: "+student.name + " 나이:"+student.Age+" 성적:"+student.grade);
+    public static void PrintStudent(StudentDTO studentDTO) {
+        System.out.println("이름: "+ studentDTO.name + " 나이:"+ studentDTO.Age+" 성적:"+ studentDTO.grade);
     }
 }
 //처음 작성한 코드(class1)와 두번째로 작성한 코드 중 무엇이 더 상황에 맞고 효율적일까??

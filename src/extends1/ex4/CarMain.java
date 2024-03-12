@@ -1,4 +1,4 @@
-package extends1.ex3;
+package extends1.ex4;
 
 public class CarMain {
     public static void main(String[] args) {
@@ -9,6 +9,7 @@ public class CarMain {
         electricCar.change();
         electricCar.openDoor();
         hydrogenCar.fillHydrogen();
+        hydrogenCar.move();
     }
 
 

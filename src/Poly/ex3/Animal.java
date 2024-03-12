@@ -1,2 +1,8 @@
-package Poly.ex3;public class Animal {
+package Poly.ex3;
+
+public class Animal {
+
+    public void sound(){
+        System.out.println("동물 울음 소리.");
+    }
 }

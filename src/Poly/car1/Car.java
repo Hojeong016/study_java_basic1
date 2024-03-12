@@ -1,2 +1,7 @@
-package Poly.car1;public interface Car {
+package Poly.car1;
+
+public interface Car {
+    void startEngine();
+    void offEngine();
+    void pressAccelerator();
 }
